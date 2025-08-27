@@ -1,0 +1,8 @@
+.title {
+  color: #175fac;
+}
+.gallery {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 30% 30% 30%;
+}
