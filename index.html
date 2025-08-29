@@ -1,122 +1,129 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="J - Random Dance VN (JPRD) là cộng đồng J-Pop Random Dance tại Việt Nam."
-    />
+    <meta name="description" content="J - Random Dance VN (JPRD) là cộng đồng J-Pop Random Dance tại Việt Nam." />
     <link rel="stylesheet" href="style.css" />
     <title>JPRD</title>
-  </head>
-  <body>
-    <button class="menu-btn">☰</button>
+</head>
+
+<body>
+    <div class="nav-menu">
+        <button class="menu-btn">☰</button>
+
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="info.html">INFO</a></li>
+                <li><a href="image.html">IMAGE</a></li>
+                <li><a href="achievement.html">ACHIEVEMENT</a></li>
+                <li><a href="event.html">EVENT</a></li>
+                <li><a href="partner.html">PARTNER</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="cover">
+        <img src="image/mascot-avatar.png" width="100%" height="200" />
+    </div>
+    <nav class="tab-menu">
+        <button onclick="location.href='index.html'">HOME</button>
+        <button onclick="location.href='info.html'">INFO</button>
+        <button onclick="location.href='image.html'">IMAGE</button>
+        <button onclick="location.href='achievement.html'">ACHIEVEMENT</button>
+        <button onclick="location.href='event.html'">EVENT</button>
+        <button onclick="location.href='partner.html'">PARTNER</button>
+        <button onclick="location.href='contact.html'">CONTACT</button>
+    </nav>
 
     <div class="container">
-      <nav class="sidebar">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="info.html">INFO</a></li>
-          <li><a href="image.html">IMAGE</a></li>
-          <li><a href="achievement.html">ACHIEVEMENT</a></li>
-          <li><a href="event.html">EVENT</a></li>
-          <li><a href="partner.html">PARTNER</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </nav>
-
-      <main>
         <div class="logo">
-          <img src="image/JPRD_logo.png" style="width: 200px" alt="Logo JPRD" />
+            <img src="image/JPRD_logo.png" style="width: 400px" alt="Logo JPRD" />
         </div>
 
-        <section class="HOME">
-          <h2 class="title">J – RANDOM DANCE VN LÀ AI?</h2>
-          <p>
-            J - Random Dance VN (hay còn gọi là JPRD) là một cộng đồng dành cho
-            những ai đam mê J-Pop và yêu thích J-Pop Random Dance. Với tinh thần
-            "Minna de Odorou" (Mọi người cùng nhảy), nhóm mong muốn lan tỏa văn
-            hóa J-Pop và anikura đến gần hơn với giới trẻ Việt Nam.
-          </p>
-          <p><em>(xem thêm)</em></p>
-
-          <h2 class="title">HÌNH ẢNH</h2>
-          <div class="gallery">
-            <img src="image/anh1.jpg" alt="Ảnh 1" />
-            <img src="image/anh2.jpg" alt="Ảnh 2" />
-            <img src="image/anh3.jpg" alt="Ảnh 3" />
-            <img src="image/anh4.jpg" alt="Ảnh 4" />
-            <img src="image/anh5.jpg" alt="Ảnh 5" />
-            <img src="image/anh6.jpg" alt="Ảnh 6" />
-            <img src="image/anh7.jpg" alt="Ảnh 7" />
-            <img src="image/anh8.jpg" alt="Ảnh 8" />
-            <img src="image/anh9.jpg" alt="Ảnh 9" />
-          </div>
-          <p><em>(xem thêm)</em></p>
-
-          <h2 class="title">MỘT VÀI SỰ KIỆN MÀ JPRD ĐÃ THAM GIA</h2>
-          <iframe
-            width="800"
-            height="450"
-            src="https://www.youtube.com/embed/3tNDIUP98g8"
-            title="Artist Day 12: Ngày Hội Họa Sĩ"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <p><em>Artist Day 12: Ngày Hội Họa Sĩ </em></p>
-
-          <iframe
-            width="800"
-            height="450"
-            src="https://www.youtube.com/embed/yE46KR6QAek?start=1644"
-            title="Hobby Horizon"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <p><em>Hobby Horizon </em></p>
-
-          <iframe
-            width="800"
-            height="450"
-            src="https://www.youtube.com/embed/96XYm2WLTr8"
-            title="Manga Festival"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <p><em>Manga Festival </em></p>
-
-          <h2 class="title">NHỮNG SỰ KIỆN SẮP TỚI</h2>
-          <p><em>Offline JPRD: Anikura Fever — Ngày: dd/mm/yyyy</em></p>
-          <p><em>Kanagawa — Ngày: dd/mm/yyyy</em></p>
-          <p><em>(xem thêm)</em></p>
-
-          <h2 class="title">NHỮNG CON SỐ ẤN TƯỢNG</h2>
-          <h2 class="title">ĐỐI TÁC CỦA CHÚNG TÔI</h2>
-        </section>
-        <section id="CONTACT">
-          <div>
-            <div class="logo">
-              <img
-                src="image/JPRD_logo.png"
-                style="width: 100px"
-                alt="Logo JPRD"
-              />
+        <div class="home">
+            <div class="info">
+                <h2 class="title">J – RANDOM DANCE VN LÀ AI?</h2>
+                <p>
+                    J - Random Dance VN (hay còn gọi là JPRD) là một cộng đồng dành cho
+                    những ai đam mê J-Pop và yêu thích J-Pop Random Dance. Với tinh thần
+                    "Minna de Odorou" (Mọi người cùng nhảy), nhóm mong muốn lan tỏa văn
+                    hóa J-Pop và anikura đến gần hơn với giới trẻ Việt Nam.
+                </p>
+                <a href="#">(xem thêm)</a>
             </div>
-            <h2 class="title">LIÊN HỆ VỚI CHÚNG TÔI</h2>
-            <p>
-              Email:
-              <a href="mailto:Drivecongviec@gmail.com"
-                >Drivecongviec@gmail.com</a
-              >
-            </p>
-            <p>Phone:093.306.1667</p>
-          </div>
-        </section>
-      </main>
+
+            <div class="images">
+                <h2 class="title">HÌNH ẢNH</h2>
+                <div class="gallery">
+                    <img src="image/anh1.jpg" alt="Ảnh 1" />
+                    <img src="image/anh2.jpg" alt="Ảnh 2" />
+                    <img src="image/anh3.jpg" alt="Ảnh 3" />
+                    <img src="image/anh4.jpg" alt="Ảnh 4" />
+                    <img src="image/anh5.jpg" alt="Ảnh 5" />
+                    <img src="image/anh6.jpg" alt="Ảnh 6" />
+                    <img src="image/anh7.jpg" alt="Ảnh 7" />
+                    <img src="image/anh8.jpg" alt="Ảnh 8" />
+                    <img src="image/anh9.jpg" alt="Ảnh 9" />
+                </div>
+                <a href="#">(xem thêm)</a>
+            </div>
+
+            <div class="event">
+                <h2 class="title">MỘT VÀI SỰ KIỆN MÀ JPRD ĐÃ THAM GIA</h2>
+                <iframe width="100%" height="400px" src="https://www.youtube.com/embed/3tNDIUP98g8"
+                    title="Artist Day 12: Ngày Hội Họa Sĩ" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <p><em>Artist Day 12: Ngày Hội Họa Sĩ </em></p>
+
+                <iframe width="100%" height="400px" src="https://www.youtube.com/embed/yE46KR6QAek?start=1644"
+                    title="Hobby Horizon" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <p><em>Hobby Horizon </em></p>
+
+                <iframe width="100%" height="400px" src="https://www.youtube.com/embed/96XYm2WLTr8"
+                    title="Manga Festival" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <p><em>Manga Festival </em></p>
+            </div>
+
+            <div class="upcomming">
+                <h2 class="title">NHỮNG SỰ KIỆN SẮP TỚI</h2>
+                <img src="image/offline-banner.jpg" alt="Banner Offline" width="100%" />
+                <p><em>Offline JPRD: Anikura Fever — Ngày: 19/10/2025</em></p>
+                <!-- <p><em>Kanagawa — Ngày: dd/mm/yyyy</em></p> -->
+                <a href="#">(xem thêm)</a>
+            </div>
+
+            <div class="impressive">
+                <h2 class="title">NHỮNG CON SỐ ẤN TƯỢNG</h2>
+            </div>
+
+            <div class="clients">
+                <h2 class="title">ĐỐI TÁC CỦA CHÚNG TÔI</h2>
+            </div>
+        </div>
     </div>
-  </body>
+</body>
+
+<footer>
+    <div class="logo">
+        <img src="image/JPRD_logo.png" style="width: 200px" alt="Logo JPRD" />
+    </div>
+    <div class="contact">
+        <h2 class="title">LIÊN HỆ VỚI CHÚNG TÔI</h2>
+        <p>
+            Email:
+            <a href="mailto:Drivecongviec@gmail.com">Drivecongviec@gmail.com</a>
+        </p>
+        <p>Phone: 093.306.1667</p>
+    </div>
+</footer>
+
 </html>
