@@ -1,0 +1,52 @@
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.countdown .box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.countdown .box {
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 80px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.title {
+    margin: 0;
+    margin-top: 60px;
+}
+
+/* Event info */
+.date, .location {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+.location {
+    color: #e75480;
+}
+
+.guest-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Banner and images */
+img[alt="m1yu"] {
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}

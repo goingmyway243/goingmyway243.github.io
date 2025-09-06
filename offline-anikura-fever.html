@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="J - Random Dance VN (JPRD) là cộng đồng J-Pop Random Dance tại Việt Nam." />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/offline-anikura-fever.css" />
+    <link rel="icon" href="image/JPRD_logo.png" type="image/png">
+    <title>JPRD</title>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="tab-menu">
+            <button onclick="location.href='index.html'">HOME</button>
+            <button onclick="location.href='info.html'">INFO</button>
+            <button onclick="location.href='image.html'">IMAGE</button>
+            <button onclick="location.href='achievement.html'">ACHIEVEMENT</button>
+            <button onclick="location.href='event.html'">EVENT</button>
+            <button onclick="location.href='partner.html'">PARTNER</button>
+            <button
+                onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">CONTACT</button>
+        </nav>
+        <div class="cover">
+            <img src="image/mascot-avatar.png" width="100%" height="200" />
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="title">🌟 ANIKURA FEVER 🌟</h1>
+        <p class="date">Ngày: 19/10/2025</p>
+        <p class="location">Địa điểm: Parc Mall, 547 - 549 Tạ Quang Bửu, Phường 4, Quận 8, TP. Hồ Chí Mình, Ho Chi Minh City, Vietnam</p>
+        <p class="description">
+            Tada~ bất ngờ chưa nào! 🎉
+            Đây sẽ là sự kiện offline đầu tiên của JPRD, nơi mà các bạn sẽ được đắm chìm trong những giai điệu Jpop đầy
+            quen thuộc và sôi động, được thưởng thức những màn trình diễn thu hút mọi ánh nhìn của dàn khách mời tài
+            năng, và đương nhiên là không thể thiếu những giây phút random dance cùng DJ siêu hot đốt cháy sân khấu rồi
+            🔥🔥🔥
+        </p>
+    </div>
+
+    <div class="countdown">
+        <div class="box-container">
+            <div id="day" class="box">0</div>
+            <div class="box-label">Ngày</div>
+        </div>
+        <div class="box-container">
+            <div id="hour" class="box">0</div>
+            <div class="box-label">Giờ</div>
+        </div>
+        <div class="box-container">
+            <div id="minute" class="box">0</div>
+            <div class="box-label">Phút</div>
+        </div>
+        <div class="box-container">
+            <div id="second" class="box">0</div>
+            <div class="box-label">Giây</div>
+        </div>
+    </div>
+
+    <img src="image/offline-banner.jpg" width="100%" alt="banner-event">
+
+    <div class="container">
+        <h2 class="title">KHÁCH MỜI</h2>
+        <p class="guest-name">M1YU</p>
+        <img src="image/offline-m1yu.jpg" width="100%" alt="m1yu">
+
+        <p class="guest-name">DJ MUI</p>
+        <img src="image/offline-muidj.png" width="100%" alt="dj-kazu">
+    </div>
+
+    <div class="container">
+        <h2 class="title">VÉ SỰ KIỆN</h2>
+        <p class="ticket-info">
+            🎫 Vé sự kiện: miễn phí (bao gồm 1 phần quà xinh xắn từ JPRD)
+        </p>
+        <p class="ticket-info">
+            📍 Điền form để nhận vé: <a href="https://forms.gle/your-sample-google-form-url" target="_blank">Google Form</a>
+        </p>
+    </div>
+
+    <div class="container">
+        <p class="description">
+            Thông tin chi tiết về sự kiện sẽ được cập nhật liên tục trên fanpage và các kênh truyền thông của JPRD, nhớ theo dõi nha~
+        </p>
+    </div>
+</body>
+    </div>
+</body>
+
+<footer id="contact">
+    <div class="container">
+        <div class="logo">
+            <img src="image/JPRD_logo.png" style="width: 200px" alt="Logo JPRD" />
+        </div>
+        <div class="contact">
+            <h2 class="title">LIÊN HỆ VỚI CHÚNG TÔI</h2>
+            <p>
+                Email:
+                <a href="mailto:drivecongviec@gmail.com">drivecongviec@gmail.com</a>
+            </p>
+            <p>Phone: 093.306.1667</p>
+        </div>
+        <div class="social">
+            <h2 class="title">THEO DÕI CHÚNG TÔI TRÊN</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61554794724439" target="_blank">
+                    <img src="image/facebook.png" alt="Facebook" width="40" />
+                </a>
+                <a href="https://www.youtube.com/@jprd1224" target="_blank">
+                    <img src="image/youtube.png" alt="YouTube" width="40" />
+                </a>
+                <a href="https://www.tiktok.com/@jprd1224" target="_blank">
+                    <img src="image/tiktok.png" alt="TikTok" width="40" />
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const targetDate = new Date('2025-10-19T00:00:00');
+    function updateCountdown() {
+        const now = new Date();
+        const diff = targetDate - now;
+        if (diff <= 0) {
+            return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+        document.getElementById('day').textContent = days;
+        document.getElementById('hour').textContent = hours;
+        document.getElementById('minute').textContent = minutes;
+        document.getElementById('second').textContent = seconds;
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+</script>
+
+</html>

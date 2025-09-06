@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="J - Random Dance VN (JPRD) là cộng đồng J-Pop Random Dance tại Việt Nam." />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="image/JPRD_logo.png" type="image/png">
     <title>JPRD</title>
 </head>
 
@@ -26,18 +27,20 @@
         </nav>
     </div>
 
-    <div class="cover">
-        <img src="image/mascot-avatar.png" width="100%" height="200" />
+    <div class="header">
+        <nav class="tab-menu">
+            <button onclick="location.href='index.html'">HOME</button>
+            <button onclick="location.href='info.html'">INFO</button>
+            <button onclick="location.href='image.html'">IMAGE</button>
+            <button onclick="location.href='achievement.html'">ACHIEVEMENT</button>
+            <button onclick="location.href='event.html'">EVENT</button>
+            <button onclick="location.href='partner.html'">PARTNER</button>
+            <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">CONTACT</button>
+        </nav>
+        <div class="cover">
+            <img src="image/mascot-avatar.png" width="100%" height="200" />
+        </div>
     </div>
-    <nav class="tab-menu">
-        <button onclick="location.href='index.html'">HOME</button>
-        <button onclick="location.href='info.html'">INFO</button>
-        <button onclick="location.href='image.html'">IMAGE</button>
-        <button onclick="location.href='achievement.html'">ACHIEVEMENT</button>
-        <button onclick="location.href='event.html'">EVENT</button>
-        <button onclick="location.href='partner.html'">PARTNER</button>
-        <button onclick="location.href='contact.html'">CONTACT</button>
-    </nav>
 
     <div class="container">
         <div class="logo">
@@ -47,7 +50,7 @@
         <div class="home">
             <div class="info">
                 <h2 class="title">J – RANDOM DANCE VN LÀ AI?</h2>
-                <p>
+                <p class="description">
                     J - Random Dance VN (hay còn gọi là JPRD) là một cộng đồng dành cho
                     những ai đam mê J-Pop và yêu thích J-Pop Random Dance. Với tinh thần
                     "Minna de Odorou" (Mọi người cùng nhảy), nhóm mong muốn lan tỏa văn
@@ -98,11 +101,7 @@
                 <img src="image/offline-banner.jpg" alt="Banner Offline" width="100%" />
                 <p><em>Offline JPRD: Anikura Fever — Ngày: 19/10/2025</em></p>
                 <!-- <p><em>Kanagawa — Ngày: dd/mm/yyyy</em></p> -->
-                <a href="#">(xem thêm)</a>
-            </div>
-
-            <div class="impressive">
-                <h2 class="title">NHỮNG CON SỐ ẤN TƯỢNG</h2>
+                <a href="offline-anikura-fever.html">(xem thêm)</a>
             </div>
 
             <div class="clients">
@@ -112,17 +111,33 @@
     </div>
 </body>
 
-<footer>
-    <div class="logo">
-        <img src="image/JPRD_logo.png" style="width: 200px" alt="Logo JPRD" />
-    </div>
-    <div class="contact">
-        <h2 class="title">LIÊN HỆ VỚI CHÚNG TÔI</h2>
-        <p>
-            Email:
-            <a href="mailto:Drivecongviec@gmail.com">Drivecongviec@gmail.com</a>
-        </p>
-        <p>Phone: 093.306.1667</p>
+<footer id="contact">
+    <div class="container">
+        <div class="logo">
+            <img src="image/JPRD_logo.png" style="width: 200px" alt="Logo JPRD" />
+        </div>
+        <div class="contact">
+            <h2 class="title">LIÊN HỆ VỚI CHÚNG TÔI</h2>
+            <p>
+                Email:
+                <a href="mailto:drivecongviec@gmail.com">drivecongviec@gmail.com</a>
+            </p>
+            <p>Phone: 093.306.1667</p>
+        </div>
+        <div class="social">
+            <h2 class="title">THEO DÕI CHÚNG TÔI TRÊN</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61554794724439" target="_blank">
+                    <img src="image/facebook.png" alt="Facebook" width="40" />
+                </a>
+                <a href="https://www.youtube.com/@jprd1224" target="_blank">
+                    <img src="image/youtube.png" alt="YouTube" width="40" />
+                </a>
+                <a href="https://www.tiktok.com/@jprd1224" target="_blank">
+                    <img src="image/tiktok.png" alt="TikTok" width="40" />
+                </a>
+            </div>
+        </div>
     </div>
 </footer>
 
