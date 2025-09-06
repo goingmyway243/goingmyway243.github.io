@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-  background-image: linear-gradient(to bottom right, rgb(101, 189, 240), rgb(245, 243, 122));
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(101, 189, 240),
+    rgb(245, 243, 122)
+  );
   overflow-x: hidden;
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
@@ -51,7 +55,7 @@ a {
   width: calc(80vw - 40px);
   margin: 0 auto;
   margin-top: 14px;
-  background-color: #F9FED3;
+  background-color: #f9fed3;
   padding: 20px;
 }
 
@@ -94,14 +98,14 @@ a {
 }
 
 .description {
-    font-size: 1.05rem;
-    color: #444;
-    margin-bottom: 18px;
-    line-height: 1.7;
-    background: #fff8fa;
-    border-left: 4px solid #e75480;
-    padding: 12px 16px;
-    border-radius: 6px;
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 18px;
+  line-height: 1.7;
+  background: #fff8fa;
+  border-left: 4px solid #e75480;
+  padding: 12px 16px;
+  border-radius: 6px;
 }
 
 footer {
@@ -144,4 +148,13 @@ footer .social-icons a {
 
 footer .social-icons a:hover {
   transform: translateY(-10px);
+}
+
+.image-container {
+  display: flex;
+  gap: 20px;
+}
+
+.image-container img {
+  object-fit: contain;
 }
