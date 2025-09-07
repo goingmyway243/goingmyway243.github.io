@@ -87,7 +87,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-          <p><em>Artist Day 12: Ngày Hội Họa Sĩ </em></p>
+          <p class="small-title">Artist Day 12: Ngày Hội Họa Sĩ</p>
 
           <iframe
             width="100%"
@@ -98,7 +98,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-          <p><em>Hobby Horizon </em></p>
+          <p class="small-title">Hobby Horizon</p>
 
           <iframe
             width="100%"
@@ -109,7 +109,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-          <p><em>Manga Festival </em></p>
+          <p class="small-title">Manga Festival</p>
         </div>
 
         <div class="upcomming">
@@ -118,9 +118,9 @@
             src="image/offline-banner.jpg"
             alt="Banner Offline"
             width="100%"
+            onclick="location.href='offline-anikura-fever.html'"
           />
-          <p><em>Offline JPRD: Anikura Fever — Ngày: 19/10/2025</em></p>
-          <!-- <p><em>Kanagawa — Ngày: dd/mm/yyyy</em></p> -->
+          <p class="small-title">Offline JPRD: Anikura Fever — Ngày: 19/10/2025</p>
           <a href="offline-anikura-fever.html">(xem thêm)</a>
         </div>
 
@@ -169,4 +169,24 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const targets = ['.info', '.images', '.event', '.upcomming', '.clients'];
+    
+    targets.forEach(targetSelector => {
+      const target = document.querySelector(targetSelector);
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !target.classList.contains('show')) {
+            target.classList.add('show');
+          }
+        });
+      }, {
+        threshold: 0.2 // Adjust based on how much of the container should be visible
+      });
+
+      observer.observe(target);
+    });
+  </script>
 </html>
