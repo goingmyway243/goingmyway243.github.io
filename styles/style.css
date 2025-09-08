@@ -194,12 +194,24 @@ footer .social-icons a:hover {
 .image-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .image-container img {
   object-fit: contain;
+}
+
+.image-container a {
+  transition: all 0.3s ease-in-out;
+  height: 200px;
+  align-content: center;
+}
+
+.image-container a:hover {
+  transform: scale(1.2);
 }
 
 @media (max-width: 1024px) {
