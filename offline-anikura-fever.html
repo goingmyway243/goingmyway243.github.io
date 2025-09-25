@@ -2,6 +2,14 @@
 <html lang="vi">
 
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="J - Random Dance VN (JPRD) là cộng đồng J-Pop Random Dance tại Việt Nam."
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/offline-anikura-fever.css" />
     <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="manifest.json" />
     <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
@@ -10,14 +18,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="192x192" href="icons/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="icons/android-chrome-512x512.png">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="J - Random Dance VN (JPRD) là cộng đồng J-Pop Random Dance tại Việt Nam." />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/offline-anikura-fever.css" />
-    <link rel="icon" href="image/JPRD_logo.png" type="image/png">
     <title>J-Random Dance VN</title>
-</head>
+  </head>
 
 <body>
     <div class="header">
@@ -35,7 +37,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div id="info" class="container">
         <h1 class="title">🌟 ANIKURA FEVER 🌟</h1>
         <p class="date">Ngày: 19/10/2025</p>
         <p class="location">Địa điểm: Parc Mall, 547 - 549 Tạ Quang Bửu, Phường 4, Quận 8, TP. Hồ Chí Mình, Ho Chi Minh City, Vietnam</p>
@@ -48,7 +50,7 @@
         </p>
     </div>
 
-    <div class="countdown-container">
+    <div id="countdown" class="countdown-container">
         <div class="countdown-title">ĐẾM NGƯỢC ĐẾN SỰ KIỆN</div>
         <div class="countdown">
             <div class="box-container">
@@ -70,9 +72,26 @@
         </div>
     </div>
 
-    <img src="https://goingmystorage.blob.core.windows.net/jprd/offline-banner.jpg" width="100%" alt="banner-event">
+    <img id="banner" src="https://goingmystorage.blob.core.windows.net/jprd/offline-banner.jpg" width="100%" alt="banner-event">
 
+    <div id="ticket" class="container">
+        <h2 class="title">VÉ SỰ KIỆN</h2>
+        <p class="ticket-info">
+            🎫 <b>Giá vé:</b> Miễn phí (bao gồm 1 phần quà xinh xắn từ JPRD)
+        </p>
+        <p class="ticket-info">
+            📍 Điền form để nhận vé: 
+            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLScuTUlJ3_Waac81VIab9GrqcuMuTDmg6d9v22UGHc5uszFyuw%2Fviewform%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExTVFPcWp2NEpvWWxYeWlkawEe_mY_LrzIC5EpszbzdQPVGJ1Meqz7J_0pzf8UQB1Ugk3qanJx_DHNo80xbEg_aem_0pJv34sVg4ZGh_mkAa5f-g&h=AT0X5V780-tNF8go-YyfNiI-qaqQTdolOLIWepLD4tD3Q64VgvzosoofESK0SzjNCUclnkWhyHKF5TivDA7XcR1fAMZESaTuO8dp09viQ51RQcF7DWgjy4symt4nie-Ohm4twYKyrrpPGRPyDw&__tn__=-UK*F&c[0]=AT3rwP6UDnJXXlDCVOF5fabxko72UdA-1GsEmWXMP478UEzqFHvqyM2sbTJ6LYDfhno6XuMct3B4XLp6j0mPXRRO9uzW-1QuRCpXIygAf1cZhkH3jBm2uVzssMvpUPglwkdiZNgSELiqQQM1cIWnjU1D08ZF15E9Oz0E0OX8bMb8RmSqMpEp7RpT5CddZIVnctHAkMAGIV-eUJvihSSGqO305MW-pHtYjIygd5tJyObwfwh7rYdkPg" target="_blank">Google Form</a>
+        </p>
+    </div>
+    
     <div class="container">
+        <p class="description">
+            Thông tin chi tiết về sự kiện sẽ được cập nhật liên tục trên fanpage và các kênh truyền thông của JPRD, nhớ theo dõi nha~
+        </p>
+    </div>
+
+    <div id="ambassador" class="container">
         <h2 class="title">ĐẠI SỨ THƯƠNG HIỆU</h2>
         <div class="guest-info">
             <p class="guest-name">RIN × NYO</p>
@@ -82,7 +101,8 @@
             </div>
         </div>
     </div>
-    <div class="container">
+
+    <div id="guests" class="container">
         <h2 class="title">KHÁCH MỜI</h2>
 
         <div class="guest-info">
@@ -117,25 +137,17 @@ Nếu bạn đã từng “quẩy” ở chuỗi sự kiện Manga Festival thì
 Sau khi “càn quét” khắp mọi sự kiện lớn nhỏ, lần này anh ấy sẽ chính thức cập bến Anikura Fever. Và đặc biệt hơn: DJ MUI đã chuẩn bị một set nhạc siêu độc lạ – chưa từng xuất hiện ở bất kỳ sân khấu nào khác.
             </div>
         </div>
-    </div>
 
-    <div class="container">
-        <h2 class="title">VÉ SỰ KIỆN</h2>
-        <p class="ticket-info">
-            🎫 <b>Giá vé:</b> Miễn phí (bao gồm 1 phần quà xinh xắn từ JPRD)
-        </p>
-        <p class="ticket-info">
-            📍 Điền form để nhận vé: 
-            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLScuTUlJ3_Waac81VIab9GrqcuMuTDmg6d9v22UGHc5uszFyuw%2Fviewform%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExTVFPcWp2NEpvWWxYeWlkawEe_mY_LrzIC5EpszbzdQPVGJ1Meqz7J_0pzf8UQB1Ugk3qanJx_DHNo80xbEg_aem_0pJv34sVg4ZGh_mkAa5f-g&h=AT0X5V780-tNF8go-YyfNiI-qaqQTdolOLIWepLD4tD3Q64VgvzosoofESK0SzjNCUclnkWhyHKF5TivDA7XcR1fAMZESaTuO8dp09viQ51RQcF7DWgjy4symt4nie-Ohm4twYKyrrpPGRPyDw&__tn__=-UK*F&c[0]=AT3rwP6UDnJXXlDCVOF5fabxko72UdA-1GsEmWXMP478UEzqFHvqyM2sbTJ6LYDfhno6XuMct3B4XLp6j0mPXRRO9uzW-1QuRCpXIygAf1cZhkH3jBm2uVzssMvpUPglwkdiZNgSELiqQQM1cIWnjU1D08ZF15E9Oz0E0OX8bMb8RmSqMpEp7RpT5CddZIVnctHAkMAGIV-eUJvihSSGqO305MW-pHtYjIygd5tJyObwfwh7rYdkPg" target="_blank">Google Form</a>
-        </p>
-    </div>
-
-    <div class="container">
-        <p class="description">
-            Thông tin chi tiết về sự kiện sẽ được cập nhật liên tục trên fanpage và các kênh truyền thông của JPRD, nhớ theo dõi nha~
-        </p>
-    </div>
-</body>
+        <div class="guest-info">
+            <p class="guest-name">TSUWII TUYẾT QUỲNH</p>
+            <img src="https://goingmystorage.blob.core.windows.net/jprd/offline-tsuwii.jpg" width="100%" alt="tsuwii">
+            <div class="description">
+                🌸 IDOL MANG NĂNG LƯỢNG NGỌT NGÀO ĐẾN ANIKURA FEVER 🌸
+                <br>
+Nếu bạn là một “fes-goer” chăm chỉ, hẳn đã từng bắt gặp cô nàng đáng yêu này rồi đó – Tsuwii Tuyết Quỳnh, hay còn được biết đến với cái tên Mochi đến từ nhóm idol Niji Universe Inc.! 🍡✨
+Lần này, Tsuwii sẽ xuất hiện với một diện mạo hoàn toàn mới, mang theo nghệ danh mới, phong cách mới, cùng loạt bài hát sôi động – viral chắc chắn sẽ khiến cả hội trường phải hát hò và lắc lư hết mình. Đừng để vẻ ngoài nhỏ nhắn đánh lừa bạn, khả năng “đốt cháy” sân khấu của cô nàng này là có thật đó nha 🔥
+            </div>
+        </div>
     </div>
 </body>
 
@@ -192,4 +204,24 @@ Sau khi “càn quét” khắp mọi sự kiện lớn nhỏ, lần này anh �
     setInterval(updateCountdown, 1000);
 </script>
 
+
+<script>
+    const targets = ["#info", "#countdown", "#ticket", "#ambassador", "#guests"];
+
+    targets.forEach((targetSelector) => {
+      const target = document.querySelector(targetSelector);
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting && !target.classList.contains("show")) {
+              target.classList.add("show");
+            }
+          });
+        }
+      );
+
+      observer.observe(target);
+    });
+  </script>
 </html>

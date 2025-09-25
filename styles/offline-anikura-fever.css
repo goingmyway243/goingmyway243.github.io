@@ -34,12 +34,14 @@
 }
 
 /* Event info */
-.date, .location {
+.date,
+.location {
     font-size: 1.5rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 8px;
 }
+
 .location {
     color: #e75480;
 }
@@ -50,6 +52,7 @@
     align-items: center;
     gap: 20px;
 }
+
 .guest-info .guest-name {
     font-size: 2rem;
     font-weight: bold;
@@ -60,12 +63,35 @@
 /* Banner and images */
 img[alt="m1yu"] {
     border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+}
+
+#info,
+#countdown,
+#ticket,
+#ambassador,
+#guests {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-in-out;
+}
+
+#info.show,
+#countdown.show,
+#ticket.show,
+#ambassador.show,
+#guests.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+    margin-top: 80px;
 }
 
 @media (max-width: 764px) {
-  .countdown .box {
-    width: 40px;
-    padding: 15px;
-  }
+    .countdown .box {
+        width: 40px;
+        padding: 15px;
+    }
 }
